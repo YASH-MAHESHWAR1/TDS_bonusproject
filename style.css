@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.card.flipped {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+.hidden {
+    display: none;
+}
+
+#timer {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#score-board {
+    margin-top: 20px;
+}
